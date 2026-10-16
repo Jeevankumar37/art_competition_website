@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123f79">
+  <meta name="description" content="All-India Drawing Competition by Sai Success Line Education Trust. Explore, create, express and shine!">
+  <title>All-India Drawing Competition | Sai Success Line Education Trust</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="home">
+    <a class="brand" href="#home" aria-label="Sai Success Line Education Trust home">
+      <img src="assets/trust-logo-and-title.jpg" alt="Sai Success Line Education Trust">
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#competition">All-India Drawing Competition</a>
+      <a href="#guidelines">Guidelines</a>
+      <a href="#contact">Contact Us</a>
+      <button class="register-button" data-register>♟ &nbsp; Register Now</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="competition" aria-label="All-India Drawing Competition">
+      <img src="assets/competition-banner.jpg" alt="Children drawing and painting — All-India Drawing Competition">
+      <button class="hero-cta" data-register>Register for the Competition <span>→</span></button>
+    </section>
+
+    <section class="feature-grid" aria-label="Competition highlights">
+      <article class="feature-card">
+        <img src="assets/trophies-card.jpg" alt="Trophies and awards for competition winners">
+      </article>
+      <article class="feature-card">
+        <img src="assets/certificate-card.jpg" alt="Participation certificate information">
+      </article>
+      <article class="feature-card">
+        <img src="assets/prize-day-card.jpg" alt="Prize and certificate distribution on November 15th">
+      </article>
+      <article class="contact-card" id="contact">
+        <h2>Contact Us for Registration</h2>
+        <a class="phone-number" href="tel:9972534135">9972534135</a>
+        <a class="phone-number" href="tel:9972621357">9972621357</a>
+        <div class="info-item" id="about"><span class="info-icon">✦</span><div><h3>About the Competition</h3><p>A national platform for young minds to express their ideas through art.</p></div></div>
+        <div class="info-item"><span class="info-icon red">▦</span><div><h3>Requirements</h3><p>Check eligibility criteria, theme, age groups and guidelines.</p></div></div>
+        <div class="info-item"><span class="info-icon orange">♙</span><div><h3>Roles &amp; Responsibilities</h3><p>Know the roles of participants, parents, teachers and organizers.</p></div></div>
+        <div class="info-item" id="guidelines"><span class="info-icon blue">▣</span><div><h3>Guidelines</h3><p>Review submission steps, important dates and other details.</p></div></div>
+        <button class="register-button card-register" data-register>Register Now</button>
+      </article>
+    </section>
+
+    <section class="quote-band"><span>🎨</span> “Every child is an artist.” <span class="paint-stroke"></span></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Sai Success Line Education Trust. All Rights Reserved.</p>
+    <div class="footer-right"><span>Follow Us:</span><a href="#contact" aria-label="Facebook">f</a><a href="#contact" aria-label="Instagram">◎</a><a href="#contact" aria-label="YouTube">▶</a><a href="#contact" aria-label="LinkedIn">in</a><span class="motto">Educate &nbsp; | &nbsp; Empower &nbsp; | &nbsp; Enrich</span></div>
+  </footer>
+
+  <dialog id="registerDialog" class="register-dialog">
+    <form id="registrationForm">
+      <button type="button" class="dialog-close" id="closeDialog" aria-label="Close">×</button>
+      <p class="eyebrow">SAI SUCCESS LINE EDUCATION TRUST</p>
+      <h2>Register Your Young Artist</h2>
+      <p class="dialog-intro">Enter the participant's details to prepare a registration enquiry.</p>
+      <label for="studentName">Participant name</label>
+      <input id="studentName" name="studentName" required maxlength="100" placeholder="Full name">
+      <label for="ageGroup">Age group</label>
+      <select id="ageGroup" name="ageGroup" required>
+        <option value="">Select age group</option><option>Below 6 years</option><option>6–8 years</option><option>9–12 years</option><option>13–16 years</option><option>17 years and above</option>
+      </select>
+      <label for="guardianPhone">Parent / guardian phone</label>
+      <input id="guardianPhone" name="guardianPhone" type="tel" inputmode="tel" pattern="[0-9+\-\s]{8,15}" required placeholder="Contact number">
+      <label for="email">Email (optional)</label>
+      <input id="email" name="email" type="email" placeholder="name@example.com">
+      <button class="register-button submit-button" type="submit">Prepare Registration Enquiry</button>
+      <p class="form-note">Demo form: it does not send or store information. Connect it to your registration backend before publishing.</p>
+      <div id="formMessage" role="status" aria-live="polite"></div>
+    </form>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
